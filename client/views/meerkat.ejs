@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%= meerkat.rank %> <%= meerkat.name %></title>
+    </head>
+    <body>
+        <label>Name: </label><%= meerkat.name %>
+        <label>Rank: </label><%= meerkat.rank %>
+        <form action="/meerkats/edit/<%= meerkat.id %>">
+            <input type="submit" name="edit" value="Edit">
+        </form>
+    </body>
+</html>

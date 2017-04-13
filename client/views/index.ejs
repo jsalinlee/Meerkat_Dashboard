@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meerkat Militia</title>
+    </head>
+    <body>
+        <% for (var i = 0; i < meerkats.length; i++) { %>
+            <a href="meerkats/<%= meerkats[i]._id %>"><img src="img/meerkat.jpg" alt="A militant meerkat" height="264" width="200"></a>
+        <% } %>
+        <form action="/meerkats/new">
+            <input type="submit" name="add" value="Add a meerkat!">
+        </form>
+    </body>
+</html>
